@@ -23,15 +23,15 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 26 Jan 2024 12:11:12 &#43;0000</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jan 2024 13:32:07 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://zvikingr.org/rss.xml" />
         
         
             <item>
                 <title>解决 vscode 终端乱码</title>
-                <link>https://zvikingr.org/notes/vscode-terminal-settings/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/vscode-terminal-settings/</guid>
+                <link>https://zvikingr.org/posts/vscode-terminal-settings/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/vscode-terminal-settings/</guid>
                 <pubDate>Fri, 26 Jan 2024 09:53:02 &#43;0800</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -643,7 +643,7 @@
 &lt;/div&gt;&lt;p&gt;在&lt;code&gt;myblog&lt;/code&gt;里配置好 hugo，&lt;code&gt;git push&lt;/code&gt;后就可以自动触发上面的 workflow，等到 &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;中出现 hugo 生成的静态文件，并且出现下面的对钩，就可以通过&lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;访问你的网站了。
 &lt;img src=&#34;https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/image-20240121001618131.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;更多&#34;&gt;更多&lt;/h2&gt;
-&lt;p&gt;关于怎么配置 cname，参考 &lt;a href=&#34;https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/&#34;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于怎么配置 cname，参考 &lt;a href=&#34;https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
 </description>
                 
                 
@@ -688,8 +688,8 @@
         
             <item>
                 <title>serverless 基础</title>
-                <link>https://zvikingr.org/notes/serverless%E5%9F%BA%E7%A1%80/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/serverless%E5%9F%BA%E7%A1%80/</guid>
+                <link>https://zvikingr.org/posts/serverless%E5%9F%BA%E7%A1%80/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/serverless%E5%9F%BA%E7%A1%80/</guid>
                 <pubDate>Mon, 15 Jan 2024 20:20:42 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -734,8 +734,8 @@
         
             <item>
                 <title>reset-ssh-key</title>
-                <link>https://zvikingr.org/notes/reset-ssh-key/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/reset-ssh-key/</guid>
+                <link>https://zvikingr.org/posts/reset-ssh-key/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/reset-ssh-key/</guid>
                 <pubDate>Sun, 14 Jan 2024 20:20:24 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -807,8 +807,8 @@
         
             <item>
                 <title>软著注意事项</title>
-                <link>https://zvikingr.org/notes/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+                <link>https://zvikingr.org/posts/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
                 <pubDate>Fri, 12 Jan 2024 15:33:23 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -874,8 +874,8 @@
         
             <item>
                 <title>vim 中数字增加或减少</title>
-                <link>https://zvikingr.org/notes/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/</guid>
+                <link>https://zvikingr.org/posts/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/</guid>
                 <pubDate>Tue, 09 Jan 2024 16:55:39 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -954,8 +954,8 @@
         
             <item>
                 <title>将 helm chart 推送到 harbor</title>
-                <link>https://zvikingr.org/notes/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</guid>
+                <link>https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</guid>
                 <pubDate>Fri, 05 Jan 2024 15:02:35 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1021,8 +1021,8 @@
         
             <item>
                 <title>离线部署 k3s 集群</title>
-                <link>https://zvikingr.org/notes/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/</guid>
+                <link>https://zvikingr.org/posts/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/</guid>
                 <pubDate>Fri, 29 Dec 2023 14:22:11 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1139,8 +1139,8 @@ kube-vip: &lt;a href=&#34;https://kube-vip.io/docs/usage/k3s/&#34;&gt;https://k
         
             <item>
                 <title>专利注意事项</title>
-                <link>https://zvikingr.org/notes/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+                <link>https://zvikingr.org/posts/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
                 <pubDate>Fri, 22 Dec 2023 16:21:12 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1221,8 +1221,8 @@ kube-vip: &lt;a href=&#34;https://kube-vip.io/docs/usage/k3s/&#34;&gt;https://k
         
             <item>
                 <title>awk</title>
-                <link>https://zvikingr.org/notes/awk/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/awk/</guid>
+                <link>https://zvikingr.org/posts/awk/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/awk/</guid>
                 <pubDate>Fri, 22 Dec 2023 16:17:59 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1279,8 +1279,8 @@ kube-vip: &lt;a href=&#34;https://kube-vip.io/docs/usage/k3s/&#34;&gt;https://k
         
             <item>
                 <title>xargs</title>
-                <link>https://zvikingr.org/notes/xargs/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/xargs/</guid>
+                <link>https://zvikingr.org/posts/xargs/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/xargs/</guid>
                 <pubDate>Fri, 22 Dec 2023 16:03:59 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1335,8 +1335,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>iptables</title>
-                <link>https://zvikingr.org/notes/iptables/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/iptables/</guid>
+                <link>https://zvikingr.org/posts/iptables/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/iptables/</guid>
                 <pubDate>Fri, 15 Dec 2023 11:03:42 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1384,8 +1384,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>查找虚拟设备对对端位置</title>
-                <link>https://zvikingr.org/notes/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/</guid>
+                <link>https://zvikingr.org/posts/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/</guid>
                 <pubDate>Thu, 14 Dec 2023 10:33:04 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1456,8 +1456,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>grep</title>
-                <link>https://zvikingr.org/notes/grep/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/grep/</guid>
+                <link>https://zvikingr.org/posts/grep/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/grep/</guid>
                 <pubDate>Wed, 13 Dec 2023 16:04:04 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1510,8 +1510,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>find</title>
-                <link>https://zvikingr.org/notes/find/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/find/</guid>
+                <link>https://zvikingr.org/posts/find/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/find/</guid>
                 <pubDate>Tue, 12 Dec 2023 20:04:05 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1569,8 +1569,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>文件权限</title>
-                <link>https://zvikingr.org/notes/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/</guid>
+                <link>https://zvikingr.org/posts/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/</guid>
                 <pubDate>Tue, 12 Dec 2023 16:03:29 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1625,8 +1625,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>docker compose</title>
-                <link>https://zvikingr.org/notes/docker-compose/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/docker-compose/</guid>
+                <link>https://zvikingr.org/posts/docker-compose/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/docker-compose/</guid>
                 <pubDate>Mon, 11 Dec 2023 14:45:57 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1692,8 +1692,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>查看机器上的网卡</title>
-                <link>https://zvikingr.org/notes/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/</guid>
+                <link>https://zvikingr.org/posts/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/</guid>
                 <pubDate>Mon, 11 Dec 2023 13:59:45 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1750,8 +1750,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>释放 docker 占用空间</title>
-                <link>https://zvikingr.org/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/</guid>
+                <link>https://zvikingr.org/posts/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/</guid>
                 <pubDate>Sat, 09 Dec 2023 22:43:23 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1880,8 +1880,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>docker 使用</title>
-                <link>https://zvikingr.org/notes/docker%E4%BD%BF%E7%94%A8/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/docker%E4%BD%BF%E7%94%A8/</guid>
+                <link>https://zvikingr.org/posts/docker%E4%BD%BF%E7%94%A8/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/docker%E4%BD%BF%E7%94%A8/</guid>
                 <pubDate>Fri, 08 Dec 2023 10:00:39 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2010,8 +2010,8 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
         
             <item>
                 <title>dockerfile 使用</title>
-                <link>https://zvikingr.org/notes/dockerfile%E4%BD%BF%E7%94%A8/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/dockerfile%E4%BD%BF%E7%94%A8/</guid>
+                <link>https://zvikingr.org/posts/dockerfile%E4%BD%BF%E7%94%A8/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/dockerfile%E4%BD%BF%E7%94%A8/</guid>
                 <pubDate>Thu, 07 Dec 2023 22:59:49 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2244,8 +2244,8 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
         
             <item>
                 <title>docker 安装</title>
-                <link>https://zvikingr.org/notes/docker%E5%AE%89%E8%A3%85/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/docker%E5%AE%89%E8%A3%85/</guid>
+                <link>https://zvikingr.org/posts/docker%E5%AE%89%E8%A3%85/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/docker%E5%AE%89%E8%A3%85/</guid>
                 <pubDate>Thu, 07 Dec 2023 16:04:42 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2313,8 +2313,8 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
         
             <item>
                 <title>Linux 修改磁盘大小</title>
-                <link>https://zvikingr.org/notes/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</guid>
+                <link>https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</guid>
                 <pubDate>Thu, 07 Dec 2023 15:03:34 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2459,8 +2459,8 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
         
             <item>
                 <title>tcp 保活</title>
-                <link>https://zvikingr.org/notes/tcp%E4%BF%9D%E6%B4%BB/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/tcp%E4%BF%9D%E6%B4%BB/</guid>
+                <link>https://zvikingr.org/posts/tcp%E4%BF%9D%E6%B4%BB/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/tcp%E4%BF%9D%E6%B4%BB/</guid>
                 <pubDate>Mon, 04 Dec 2023 20:11:39 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2528,8 +2528,8 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
         
             <item>
                 <title>用户和用户组</title>
-                <link>https://zvikingr.org/notes/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/</guid>
+                <link>https://zvikingr.org/posts/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/</guid>
                 <pubDate>Fri, 01 Dec 2023 23:03:26 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2647,8 +2647,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>rsync 文件同步</title>
-                <link>https://zvikingr.org/notes/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</guid>
+                <link>https://zvikingr.org/posts/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</guid>
                 <pubDate>Sun, 19 Nov 2023 11:33:08 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2762,8 +2762,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>命令行内容输出到剪贴板</title>
-                <link>https://zvikingr.org/notes/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</guid>
+                <link>https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</guid>
                 <pubDate>Thu, 09 Nov 2023 21:26:54 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2836,8 +2836,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>hping3 使用</title>
-                <link>https://zvikingr.org/notes/hping3%E4%BD%BF%E7%94%A8/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/hping3%E4%BD%BF%E7%94%A8/</guid>
+                <link>https://zvikingr.org/posts/hping3%E4%BD%BF%E7%94%A8/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/hping3%E4%BD%BF%E7%94%A8/</guid>
                 <pubDate>Sat, 04 Nov 2023 11:39:44 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2898,8 +2898,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>临时修改网卡地址</title>
-                <link>https://zvikingr.org/notes/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/</guid>
+                <link>https://zvikingr.org/posts/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/</guid>
                 <pubDate>Wed, 01 Nov 2023 13:03:49 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2964,8 +2964,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 依赖注入</title>
-                <link>https://zvikingr.org/notes/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</guid>
+                <link>https://zvikingr.org/posts/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</guid>
                 <pubDate>Sat, 23 Sep 2023 11:20:06 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3173,8 +3173,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>命令行启动 wireshark 抓包</title>
-                <link>https://zvikingr.org/notes/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/</guid>
+                <link>https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/</guid>
                 <pubDate>Wed, 06 Sep 2023 12:15:41 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3245,8 +3245,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Golang 的 generate stringer</title>
-                <link>https://zvikingr.org/notes/golang%E7%9A%84generate-stringer/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/golang%E7%9A%84generate-stringer/</guid>
+                <link>https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/</guid>
                 <pubDate>Sun, 03 Sep 2023 17:07:06 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3635,8 +3635,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>docker 仓库</title>
-                <link>https://zvikingr.org/notes/docker%E4%BB%93%E5%BA%93/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/docker%E4%BB%93%E5%BA%93/</guid>
+                <link>https://zvikingr.org/posts/docker%E4%BB%93%E5%BA%93/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/docker%E4%BB%93%E5%BA%93/</guid>
                 <pubDate>Sat, 29 Jul 2023 22:01:35 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3699,8 +3699,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 竞态检测</title>
-                <link>https://zvikingr.org/notes/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</guid>
+                <link>https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</guid>
                 <pubDate>Thu, 27 Jul 2023 19:04:14 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3767,8 +3767,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 编译 tips</title>
-                <link>https://zvikingr.org/notes/go%E7%BC%96%E8%AF%91tips/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E7%BC%96%E8%AF%91tips/</guid>
+                <link>https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/</guid>
                 <pubDate>Thu, 27 Jul 2023 09:00:19 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3951,8 +3951,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>开源协议区别</title>
-                <link>https://zvikingr.org/notes/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/</guid>
+                <link>https://zvikingr.org/posts/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/</guid>
                 <pubDate>Tue, 04 Jul 2023 09:55:25 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3992,8 +3992,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 的 gc</title>
-                <link>https://zvikingr.org/notes/go%E7%9A%84gc/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E7%9A%84gc/</guid>
+                <link>https://zvikingr.org/posts/go%E7%9A%84gc/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%9A%84gc/</guid>
                 <pubDate>Mon, 19 Jun 2023 23:04:12 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4034,8 +4034,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>分布式锁提前过期</title>
-                <link>https://zvikingr.org/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/</guid>
+                <link>https://zvikingr.org/posts/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/</guid>
                 <pubDate>Tue, 13 Jun 2023 17:01:37 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4077,8 +4077,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>LRU</title>
-                <link>https://zvikingr.org/notes/lru/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/lru/</guid>
+                <link>https://zvikingr.org/posts/lru/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/lru/</guid>
                 <pubDate>Wed, 17 May 2023 21:35:01 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4125,8 +4125,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 的 GPM 模型</title>
-                <link>https://zvikingr.org/notes/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</guid>
+                <link>https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</guid>
                 <pubDate>Wed, 17 May 2023 21:30:24 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4172,8 +4172,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>Go 内存逃逸</title>
-                <link>https://zvikingr.org/notes/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/</guid>
+                <link>https://zvikingr.org/posts/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/</guid>
                 <pubDate>Mon, 15 May 2023 11:33:20 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4280,8 +4280,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>rocketmq 事务消息</title>
-                <link>https://zvikingr.org/notes/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/</guid>
+                <link>https://zvikingr.org/posts/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/</guid>
                 <pubDate>Sun, 14 May 2023 12:30:46 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4331,8 +4331,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>本地消息表</title>
-                <link>https://zvikingr.org/notes/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/</guid>
+                <link>https://zvikingr.org/posts/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/</guid>
                 <pubDate>Sun, 14 May 2023 09:02:01 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4379,8 +4379,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>map-reduce</title>
-                <link>https://zvikingr.org/notes/map-reduce/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/map-reduce/</guid>
+                <link>https://zvikingr.org/posts/map-reduce/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/map-reduce/</guid>
                 <pubDate>Thu, 27 Apr 2023 17:01:23 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4420,8 +4420,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>lsof</title>
-                <link>https://zvikingr.org/notes/lsof/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/lsof/</guid>
+                <link>https://zvikingr.org/posts/lsof/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/lsof/</guid>
                 <pubDate>Tue, 18 Apr 2023 17:54:01 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4491,8 +4491,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>systemctl</title>
-                <link>https://zvikingr.org/notes/systemctl/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/systemctl/</guid>
+                <link>https://zvikingr.org/posts/systemctl/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/systemctl/</guid>
                 <pubDate>Tue, 18 Apr 2023 16:12:56 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4547,8 +4547,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>间隙锁和死锁</title>
-                <link>https://zvikingr.org/notes/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/</guid>
+                <link>https://zvikingr.org/posts/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/</guid>
                 <pubDate>Sat, 01 Apr 2023 15:03:02 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4591,8 +4591,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL count(*)、count(1)、count(列) 的区别</title>
-                <link>https://zvikingr.org/notes/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+                <link>https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
                 <pubDate>Sat, 25 Mar 2023 10:29:26 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4657,8 +4657,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL8 创建用户和授权</title>
-                <link>https://zvikingr.org/notes/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</guid>
+                <link>https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</guid>
                 <pubDate>Wed, 22 Mar 2023 17:30:59 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4754,8 +4754,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 允许 root 远程访问</title>
-                <link>https://zvikingr.org/notes/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</guid>
+                <link>https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</guid>
                 <pubDate>Wed, 22 Mar 2023 16:09:45 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4814,8 +4814,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 事务</title>
-                <link>https://zvikingr.org/notes/mysql%E4%BA%8B%E5%8A%A1/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/mysql%E4%BA%8B%E5%8A%A1/</guid>
+                <link>https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/</guid>
                 <pubDate>Sun, 19 Mar 2023 21:15:03 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4888,8 +4888,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 常识</title>
-                <link>https://zvikingr.org/notes/mysql%E5%B8%B8%E8%AF%86/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/mysql%E5%B8%B8%E8%AF%86/</guid>
+                <link>https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/</guid>
                 <pubDate>Sat, 18 Mar 2023 11:24:45 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5004,8 +5004,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>Go sync map 实现</title>
-                <link>https://zvikingr.org/notes/go-sync-map%E5%AE%9E%E7%8E%B0/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/go-sync-map%E5%AE%9E%E7%8E%B0/</guid>
+                <link>https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/</guid>
                 <pubDate>Thu, 16 Mar 2023 21:20:16 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5045,8 +5045,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>redis 状态查看</title>
-                <link>https://zvikingr.org/notes/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/</guid>
+                <link>https://zvikingr.org/posts/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/</guid>
                 <pubDate>Fri, 10 Mar 2023 21:11:22 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5097,8 +5097,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>redis re-hash 过程</title>
-                <link>https://zvikingr.org/notes/redis-re-hash%E8%BF%87%E7%A8%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/redis-re-hash%E8%BF%87%E7%A8%8B/</guid>
+                <link>https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/</guid>
                 <pubDate>Fri, 10 Mar 2023 20:11:06 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5139,8 +5139,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>redis 热点 key</title>
-                <link>https://zvikingr.org/notes/redis%E7%83%AD%E7%82%B9key/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/redis%E7%83%AD%E7%82%B9key/</guid>
+                <link>https://zvikingr.org/posts/redis%E7%83%AD%E7%82%B9key/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/redis%E7%83%AD%E7%82%B9key/</guid>
                 <pubDate>Fri, 10 Mar 2023 20:01:32 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5182,8 +5182,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>redis 集群</title>
-                <link>https://zvikingr.org/notes/redis%E9%9B%86%E7%BE%A4/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/redis%E9%9B%86%E7%BE%A4/</guid>
+                <link>https://zvikingr.org/posts/redis%E9%9B%86%E7%BE%A4/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/redis%E9%9B%86%E7%BE%A4/</guid>
                 <pubDate>Fri, 10 Mar 2023 09:55:54 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5239,8 +5239,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>curl</title>
-                <link>https://zvikingr.org/notes/curl/</link>
-                <guid isPermaLink="true">https://zvikingr.org/notes/curl/</guid>
+                <link>https://zvikingr.org/posts/curl/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/curl/</guid>
                 <pubDate>Thu, 02 Mar 2023 11:25:27 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
