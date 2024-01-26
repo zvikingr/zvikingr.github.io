@@ -15,7 +15,7 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>docker使用 | 避风港</title>
+    <title>docker 使用 | 避风港</title>
 
     <link rel="stylesheet" href="/css/meme.min.css" />
 
@@ -59,9 +59,9 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-12-08T10:00:39+00:00",
-        "dateModified": "2024-01-26T01:58:35+00:00",
+        "dateModified": "2024-01-26T10:34:01+00:00",
         "url": "https://zvikingr.org/notes/docker%E4%BD%BF%E7%94%A8/",
-        "headline": "docker使用",
+        "headline": "docker 使用",
         "description": "操作镜像 一些时候，我们可能只是对表格的结构不满意，希望自己组织列；或者不希望有标题，……",
         "inLanguage" : "zh-CN",
         "articleSection": "notes",
@@ -102,14 +102,14 @@
 
 
 
-<meta property="og:title" content="docker使用" />
+<meta property="og:title" content="docker 使用" />
 <meta property="og:description" content="操作镜像 一些时候，我们可能只是对表格的结构不满意，希望自己组织列；或者不希望有标题，……" />
 <meta property="og:url" content="https://zvikingr.org/notes/docker%E4%BD%BF%E7%94%A8/" />
 <meta property="og:site_name" content="避风港" />
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/image-20231208105009126.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-12-08T10:00:39&#43;00:00" />
-    <meta property="article:modified_time" content="2024-01-26T01:58:35&#43;00:00" />
+    <meta property="article:modified_time" content="2024-01-26T10:34:01&#43;00:00" />
     
     <meta property="article:section" content="notes" />
 
@@ -236,7 +236,7 @@
 
         <article class="content post h-entry" data-align="justify" data-type="notes" data-toc-num="true">
 
-            <h1 class="post-title p-name">docker使用</h1>
+            <h1 class="post-title p-name">docker 使用</h1>
 
             
 
@@ -364,7 +364,7 @@
 <img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/image-20231208105141141.png" alt=""></p>
 <h2 id="删除数据卷"><a href="#删除数据卷" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:删除数据卷" class="headings">删除数据卷</a></h2>
 <p><code>数据卷</code> 是被设计用来持久化数据的，它的生命周期独立于容器，Docker 不会在容器被删除后自动删除 <code>数据卷</code>，并且也不存在垃圾回收这样的机制来处理没有任何容器引用的 <code>数据卷</code>。如果需要在删除容器的同时移除数据卷。可以在删除容器的时候使用 <code>docker rm -v</code> 这个命令。</p>
-<p>无主的数据卷可能会占据很多空间，要清理请使用以下命令:</p>
+<p>无主的数据卷可能会占据很多空间，要清理请使用以下命令：</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -406,19 +406,19 @@
                     </li>
                 
                     <li class="related-item">
-                        <a href="/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/" class="related-link">释放docker占用空间</a>
+                        <a href="/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/" class="related-link">释放 docker 占用空间</a>
                     </li>
                 
                     <li class="related-item">
-                        <a href="/notes/dockerfile%E4%BD%BF%E7%94%A8/" class="related-link">dockerfile使用</a>
+                        <a href="/notes/dockerfile%E4%BD%BF%E7%94%A8/" class="related-link">dockerfile 使用</a>
                     </li>
                 
                     <li class="related-item">
-                        <a href="/notes/docker%E5%AE%89%E8%A3%85/" class="related-link">docker安装</a>
+                        <a href="/notes/docker%E5%AE%89%E8%A3%85/" class="related-link">docker 安装</a>
                     </li>
                 
                     <li class="related-item">
-                        <a href="/notes/docker%E4%BB%93%E5%BA%93/" class="related-link">docker仓库</a>
+                        <a href="/notes/docker%E4%BB%93%E5%BA%93/" class="related-link">docker 仓库</a>
                     </li>
                 
             </ul>
@@ -461,12 +461,12 @@
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/" rel="prev">&lt; 释放docker占用空间</a>
+                    <a href="/notes/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/" rel="prev">&lt; 释放 docker 占用空间</a>
                 </li>
             
             
                 <li class="post-nav-next">
-                    <a href="/notes/dockerfile%E4%BD%BF%E7%94%A8/" rel="next">dockerfile使用 &gt;</a>
+                    <a href="/notes/dockerfile%E4%BD%BF%E7%94%A8/" rel="next">dockerfile 使用 &gt;</a>
                 </li>
             
         </ul>
