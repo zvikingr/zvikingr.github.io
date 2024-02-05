@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.122.0"><meta name="theme-color" content="#16171d" />
+    <meta name="color-scheme" content="light dark">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>IMS 语音通话过程 | 避风港</title>
+
+    <link rel="stylesheet" href="/css/meme.min.css" />
+
+    
+    
+        
+            <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" defer></script><script src="/js/meme.min.js"></script>
+
+        
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="zvikingr" /><meta name="description" content="前言 什么是音视频通信，有哪些方式，需要什么东西支撑 5G 网络里怎样实现两个终端音视频通信……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="避风港" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="避风港" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+        <link rel="canonical" href="https://zvikingr.org/posts/ims-with-5g/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2024-02-05T13:24:45+08:00",
+        "dateModified": "2024-02-05T09:07:06+00:00",
+        "url": "https://zvikingr.org/posts/ims-with-5g/",
+        "headline": "IMS 语音通话过程",
+        "description": "前言 什么是音视频通信，有哪些方式，需要什么东西支撑 5G 网络里怎样实现两个终端音视频通信……",
+        "inLanguage" : "zh-CN",
+        "articleSection": "posts",
+        "wordCount":  2225 ,
+        "image": ["https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-12-gNighV.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-13-aMJjpi.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-13-U0xorM.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-14-pzGqQh.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-2hfyTX.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-V7rGJn.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-VCJ1xp.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-S9L198.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-16-fABwsz.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-39-MJtiJ8.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-tp4lYs.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-lhe5Z9.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-vOTIVG.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-19-HO1O02.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-19-V4Oxm1.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-hzu34f.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-P13GXU.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-AW9uR1.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-26-Dm2c4i.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-4XkBF2.png","https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-VMgQBc.png"],
+        "author": {
+            "@type": "Person",
+            "description": "aaaaa",
+            "email": "zvikingr@outlook.com",
+            "image": "https://zvikingr.org/icons/apple-touch-icon.png",
+            "url": "https://zvikingr.org",
+            "name": "zvikingr"
+        },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
+        "publisher": {
+            "@type": "Organization",
+            "name": "避风港",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://zvikingr.org/icons/apple-touch-icon.png"
+            },
+            "url": "https://zvikingr.org/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://zvikingr.org/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+
+
+
+    
+
+
+
+<meta property="og:title" content="IMS 语音通话过程" />
+<meta property="og:description" content="前言 什么是音视频通信，有哪些方式，需要什么东西支撑 5G 网络里怎样实现两个终端音视频通信……" />
+<meta property="og:url" content="https://zvikingr.org/posts/ims-with-5g/" />
+<meta property="og:site_name" content="避风港" />
+<meta property="og:locale" content="zh" /><meta property="og:image" content="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-12-gNighV.png" />
+<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2024-02-05T13:24:45&#43;08:00" />
+    <meta property="article:modified_time" content="2024-02-05T09:07:06&#43;00:00" />
+    
+    <meta property="article:section" content="posts" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">避风港</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item"><a href="/"><span class="menu-item-name">首页</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item active"><a href="/posts/"><span class="menu-item-name">博客</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">阅读更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="posts" data-toc-num="true">
+
+            <h1 class="post-title p-name">IMS 语音通话过程</h1>
+
+            
+
+            
+                
+            
+
+            
+                
+
+<div class="post-meta">
+    
+        
+        <time datetime="2024-02-05T13:24:45&#43;08:00" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2024.2.5</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/ims/" class="category-link p-category">ims</a></span>
+            
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon post-meta-icon"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticon post-meta-icons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM111 257.1l26.8 89.2 31.6-90.3c3.4-9.6 12.5-16.1 22.7-16.1s19.3 6.4 22.7 16.1l31.6 90.3L273 257.1c3.8-12.7 17.2-19.9 29.9-16.1s19.9 17.2 16.1 29.9l-48 160c-3 10-12 16.9-22.4 17.1s-19.8-6.2-23.2-16.1L192 336.6l-33.3 95.3c-3.4 9.8-12.8 16.3-23.2 16.1s-19.5-7.1-22.4-17.1l-48-160c-3.8-12.7 3.4-26.1 16.1-29.9s26.1 3.4 29.9 16.1z"/></svg>&nbsp;2225</span>
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;5&nbsp;分钟</span>
+    
+    
+    
+</div>
+
+            
+
+            <nav class="contents">
+  <h2 id="contents" class="contents-title">目录</h2><ol class="toc">
+    <li><a id="contents:前言" href="#前言">前言</a></li>
+    <li><a id="contents:总体架构" href="#总体架构">总体架构</a>
+      <ol>
+        <li><a id="contents:ims-架构" href="#ims-架构">IMS 架构</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:通信过程" href="#通信过程">通信过程</a>
+      <ol>
+        <li><a id="contents:上线注册" href="#上线注册">上线注册</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:发起通话" href="#发起通话">发起通话</a></li>
+    <li><a id="contents:更多内容" href="#更多内容">更多内容</a>
+      <ol>
+        <li><a id="contents:环境搭建" href="#环境搭建">环境搭建</a></li>
+        <li><a id="contents:调试工具" href="#调试工具">调试工具</a></li>
+        <li><a id="contents:sip-协议" href="#sip-协议">sip 协议</a></li>
+        <li><a id="contents:5qi" href="#5qi">5QI</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:问题记录" href="#问题记录">问题记录</a>
+      <ol>
+        <li><a id="contents:控制-p-cscf-发心跳的时间间隔options" href="#控制-p-cscf-发心跳的时间间隔options">控制 P-CSCF 发心跳的时间间隔（OPTIONS）</a></li>
+        <li><a id="contents:控制终端重注册的时间间隔" href="#控制终端重注册的时间间隔">控制终端重注册的时间间隔</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:上线失败-401" href="#上线失败-401">上线失败 401</a></li>
+  </ol>
+</nav><div class="post-body e-content">
+                <h2 id="前言"><a href="#前言" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:前言" class="headings">前言</a></h2>
+<blockquote>
+<p>什么是音视频通信，有哪些方式，需要什么东西支撑</p>
+</blockquote>
+<p>5G 网络里怎样实现两个终端音视频通信：</p>
+<ul>
+<li>使用 APP（微信、钉钉、portsip 等），这些主要是数据面的交互，核心网不需要配合改动。</li>
+<li>使用系统拨号盘，涉及到 IMS，需要核心网配合提供接口或数据交换，信令面和基站都需要配套支持。</li>
+</ul>
+<p>区别：</p>
+<p>微信音视频靠互联网数据传输，可以是 WiFi、宽带、运营商移动网络，需要下载微信客户端。
+IMS 不需要手机安装额外客户端，运营商做了很多绑定，比如手机号账号信息、套餐，提供更多收费服务。
+另外 IMS 借助运营商网络，支持更多的 Qos 控制，可提供更好的网络质量。</p>
+<h2 id="总体架构"><a href="#总体架构" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:总体架构" class="headings">总体架构</a></h2>
+<blockquote>
+<p>宏观图，有个印象，不要细节</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-12-gNighV.png" alt="2024-02-05-14-12-gNighV"></p>
+<h3 id="ims-架构"><a href="#ims-架构" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:ims-架构" class="headings">IMS 架构</a></h3>
+<p>什么是 IMS，IP Multimedia Subsystem（IP 多媒体子系统）。</p>
+<p>整个 IMS 系统分成拜访网络 (Visited Network) 和归属网络 (Home Network) 两部分。</p>
+<p>下图是一个运营商级别的复杂的架构图，存在漫游的情况，方便理解为什么需要三个 CSCF 以及实际用途。
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-13-aMJjpi.png" alt="2024-02-05-14-13-aMJjpi"></p>
+<p>HSS：Home Subscriber Server 归属用户信息服务。</p>
+<p>CSCF：全称为 Call Session Control Function（呼叫会话管理系统），负责呼叫的建立、修改、终止以及会话的控制和管理。CSCF 存在三种类型：P-CSCF（Proxy CSCF）、I-CSCF（Interrogating CSCF）和 S-CSCF（Serving CSCF）。</p>
+<p>P-CSCF 属于拜访网络，I-CSCF 和 S-CSCF 属于归属网络。</p>
+<p>P-CSCF 和 I-CSCF 可认为是两层 NGINX 代理，做的事情很少，核心业务在 S-CSCF，实例数量大概是 1:1:N。</p>
+<p>P-CSCF 负责将注册信息转发给 I-CSCF，I-CSCF 负责将请求路由到某一个 S-CSCF。</p>
+<p>S-CSCF 也可以将请求路由到下一个网络的 P-CSCF。</p>
+<h2 id="通信过程"><a href="#通信过程" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:通信过程" class="headings">通信过程</a></h2>
+<p>前提条件：</p>
+<ul>
+<li>终端和基站需要支持并开启 VONR</li>
+<li>需要 ims 和核心网互通（用于认证校验数据）</li>
+<li>需要配置 HSS 建立 IMSI 和手机号的关联关系</li>
+</ul>
+<p>核心网侧主要是完成终端上线和 PDU 会话的维护，后面会有详细介绍，这里只提供 IMS 侧数据流：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-13-U0xorM.png" alt="2024-02-05-14-13-U0xorM"></p>
+<p>下图是 ims 上使用 sngrep 看到的两个终端上线和发起语音通话的流程图。
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-14-pzGqQh.png" alt="2024-02-05-14-14-pzGqQh"></p>
+<p>在终端注册过程中，终端会开启一个监听端口，ims 服务会对这个端口发起连接，如下图中的 172.19.0.70:31886 和 172.22.0.71:31897。
+终端主动监听是为了作为被叫或者需要下发通知消息（SIP NOTIFY 消息）时，ims 能通过该地址主动找到客户端。
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-2hfyTX.png" alt="2024-02-05-14-15-2hfyTX"></p>
+<h3 id="上线注册"><a href="#上线注册" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:上线注册" class="headings">上线注册</a></h3>
+<p>整体流程：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-V7rGJn.png" alt="2024-02-05-14-15-V7rGJn"></p>
+<blockquote>
+<p>PDU 会话（ims / internet）随机创建，不分先后</p>
+<p>ims PDU 会话：用于终端和 ims 服务通信使用，传递 ims 信令和音视频数据。</p>
+<p>internet PDU 会话：用于终端走数据流量使用，如手机上网，刷抖音。</p>
+</blockquote>
+<p>PDU 会话创建流程图：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-VCJ1xp.png" alt="2024-02-05-14-15-VCJ1xp"></p>
+<p>只显示 ngap 的消息抓包（抓的是 n2n3 接口）：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-15-S9L198.png" alt="2024-02-05-14-15-S9L198"></p>
+<p>不带消息过滤的抓包（抓的是 n2n3 接口）：</p>
+<blockquote>
+<p>可看到本次注册先建立了 ims PDU 会话，后建立的 internet PDU 会话</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-16-fABwsz.png" alt="2024-02-05-14-16-fABwsz"></p>
+<p>ims PDU 会话建立完成后，终端接着发起了 ims 注册请求。</p>
+<p>ims PDU 会话建立成功后，核心网返回给终端以下关键信息：</p>
+<blockquote>
+<p>终端的 IMS IP 地址</p>
+<p>IMS 的入口地址 P-CSCF IP</p>
+<p>终端允许的上下行带宽</p>
+</blockquote>
+<p>终端拿到 IMS 的注册地址（P-CSCF 的 IP）后，发起 IMS 注册请求（SIP REGISTER 请求）</p>
+<blockquote>
+<p>请求依次经过 UE --&gt; UPF --&gt; P-CSCF  --&gt; I-CSCF --&gt; S-CSCF</p>
+<p>192.168.190.1:41061 是 P-CSCF 请求 I-CSCF 时的客户端地址</p>
+</blockquote>
+<p>sngrep 抓包看到的 ims 注册流程：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-39-MJtiJ8.png" alt="2024-02-05-14-39-MJtiJ8"></p>
+<p>第一个注册包关注的 sip 头域：</p>
+<blockquote>
+<p>From、To：注册时是终端自己的标识</p>
+<p>Security-Client：表明客户端支持的加密算法，将要使用的通信端口</p>
+<p>Expires：客户端期望的注册过期时间，没什么用，最终由服务端说了算</p>
+</blockquote>
+<p>IMS 返回给终端 401 挑战消息。主要关注的 sip 头域：</p>
+<blockquote>
+<p>Security-Server：表明 IMS 服务端将要使用的通信端口</p>
+<p>WWW-Authenticate：给客户端计算认证信息使用的参数</p>
+</blockquote>
+<p>第二个注册包主要关注的 sip 头域：</p>
+<blockquote>
+<p>Security-Client：表明客户端支持的加密算法，将要使用的通信端口</p>
+<p>Authorization：包含经过服务端指定的验证算法和参数，以及终端自己的认证信息计算后得到的认证信息</p>
+</blockquote>
+<p>注册成功消息里主要关注的 sip 头域：</p>
+<blockquote>
+<p>Contact 里的 expires：告诉终端本次注册的过期时间。终端会在过期之前发起重注册，一般是取 expires 值的二分之一后发起重注册。</p>
+</blockquote>
+<p>SIP 401 主要是为了让终端使用服务端指定的加密方式进行认证。那么为什么不在第一次注册包里就带上认证消息，原因如下：</p>
+<blockquote>
+<p>第一次认证时终端和 IMS 服务端还没商量好使用哪种认证算法。</p>
+<p>防止重放攻击，第二次认证的时候，终端会使用 IMS 服务端返回的 WWW-Authenticate 里面的认证参数来进行认证，特别是其中的 nonce 值，这个值只能使用一次，每次认证都不一样。</p>
+</blockquote>
+<h2 id="发起通话"><a href="#发起通话" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:发起通话" class="headings">发起通话</a></h2>
+<blockquote>
+<p>一个 PDU 会话里面包含多条 QoS 规则，每个规则认为是一个承载。</p>
+<p>一个 PDU 会话会有一个默认承载，像音视频场景，会有针对语音和视频的专有承载。</p>
+</blockquote>
+<p>整体流程：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-tp4lYs.png" alt="2024-02-05-14-18-tp4lYs"></p>
+<p>PDU 会话修改流程图：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-lhe5Z9.png" alt="2024-02-05-14-18-lhe5Z9"></p>
+<p>终端发送 INVITE 请求：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-18-vOTIVG.png" alt="2024-02-05-14-18-vOTIVG"></p>
+<p>通话发起时，会有一个 NG Application Protocol (PDUSessionResourceModifyRequest) 请求来添加一条 QoS 规则：</p>
+<blockquote>
+<p>请求中表明了要使用的 5QI 值、终端使用的 IP 端口、上下行速率</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-19-HO1O02.png" alt="2024-02-05-14-19-HO1O02"></p>
+<p>通话结束时，同样会有一个 NG Application Protocol (PDUSessionResourceModifyRequest) 请求来删除对应的 QoS 规则。
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-19-V4Oxm1.png" alt="2024-02-05-14-19-V4Oxm1"></p>
+<p>sngrep 抓包看到的通话全流程：
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-hzu34f.png" alt="2024-02-05-14-20-hzu34f">
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-P13GXU.png" alt="2024-02-05-14-20-P13GXU">
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-20-AW9uR1.png" alt="2024-02-05-14-20-AW9uR1"></p>
+<h2 id="更多内容"><a href="#更多内容" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:更多内容" class="headings">更多内容</a></h2>
+<blockquote>
+<p>一些涉及到的必要的知识点</p>
+</blockquote>
+<h3 id="环境搭建"><a href="#环境搭建" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:环境搭建" class="headings">环境搭建</a></h3>
+<p><a href="https://open5gs.org/open5gs/docs/tutorial/02-VoLTE-setup/" target="_blank" rel="noopener">https://open5gs.org/open5gs/docs/tutorial/02-VoLTE-setup/</a></p>
+<h3 id="调试工具"><a href="#调试工具" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:调试工具" class="headings">调试工具</a></h3>
+<p>sngrep
+wireshark</p>
+<h3 id="sip-协议"><a href="#sip-协议" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:sip-协议" class="headings">sip 协议</a></h3>
+<p>使用到的都是 sip 协议，和 http 非常类似，有消息头、body、状态码</p>
+<h3 id="5qi"><a href="#5qi" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:5qi" class="headings">5QI</a></h3>
+<p>IMS 语音会话建立有专门的 DNN(ims) 来建立专有承载，其中与 internet 的会话建立区别在于 5QI 的不同，5qi 的值与作用如下表：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-26-Dm2c4i.png" alt="2024-02-05-14-26-Dm2c4i"></p>
+<p>参考： <a href="https://blog.csdn.net/Kaious/article/details/122080529" target="_blank" rel="noopener">https://blog.csdn.net/Kaious/article/details/122080529</a></p>
+<h2 id="问题记录"><a href="#问题记录" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:问题记录" class="headings">问题记录</a></h2>
+<blockquote>
+<p>重要的经验总结，避坑指南</p>
+</blockquote>
+<h3 id="控制-p-cscf-发心跳的时间间隔options"><a href="#控制-p-cscf-发心跳的时间间隔options" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:控制-p-cscf-发心跳的时间间隔options" class="headings">控制 P-CSCF 发心跳的时间间隔（OPTIONS）</a></h3>
+<p><code>/etc/kamailio_pcscf/kamailio_pcscf.conf</code>
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-4XkBF2.png" alt="2024-02-05-14-23-4XkBF2"></p>
+<h3 id="控制终端重注册的时间间隔"><a href="#控制终端重注册的时间间隔" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:控制终端重注册的时间间隔" class="headings">控制终端重注册的时间间隔</a></h3>
+<p>注册成功后，S-CSCF 会定期向 UE 发送心跳消息（Keep Alive 或 Expires Timer 刷新），以维持注册状态。同时，当 UE 的网络位置发生变化时，会重新触发 REGISTER 消息的发送，更新其在网络中的位置信息。</p>
+<p><code>/etc/kamailio_scscf/kamailio_scscf.conf</code>
+<img src="https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-VMgQBc.png" alt="2024-02-05-14-23-VMgQBc"></p>
+<h2 id="上线失败-401"><a href="#上线失败-401" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:上线失败-401" class="headings">上线失败 401</a></h2>
+<p>核心网和 ims 中的 sqn 序列号不同步，导致 IMS 无法上线，一直触发 401 状态码，需要从核心网数据库中把对应终端的序列号写到 HSS。</p>
+<p>参考： <a href="https://blog.csdn.net/liujianfeng1984/article/details/35247623" target="_blank" rel="noopener">https://blog.csdn.net/liujianfeng1984/article/details/35247623</a></p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+    
+
+
+
+        
+    
+        <div class="post-tags">
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/ims/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>ims</a>
+                
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/voip/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>voip</a>
+                
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/5gc/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>5gc</a>
+                
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/sip/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>sip</a>
+                
+            
+        </div>
+    
+
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+            
+                <li class="post-nav-next">
+                    <a href="/posts/vscode-terminal-settings/" rel="next">解决 vscode 终端乱码 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2024&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticon footer-icons, Inc. --><path d="M320 192h17.1c22.1 38.3 63.5 64 110.9 64c11 0 21.8-1.4 32-4v4 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7s18.2-30 35.7-27.8l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5v0c-10 3.5-20.8 5.5-32 5.5c-28.4 0-54-12.4-71.6-32h0c-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128v0V32 12 10.7C352 4.8 356.7 .1 362.6 0h.2c3.3 0 6.4 1.6 8.4 4.2l0 .1L384 21.3l27.2 36.3L416 64h64l4.8-6.4L512 21.3 524.8 4.3l0-.1c2-2.6 5.1-4.2 8.4-4.2h.2C539.3 .1 544 4.8 544 10.7V12 32v96c0 17.3-4.6 33.6-12.6 47.6c-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>&nbsp;zvikingr</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站访客数&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站访问量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    let imgNodes = document.querySelectorAll('div.post-body img');
+    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
+
+    mediumZoom(imgNodes, {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>
