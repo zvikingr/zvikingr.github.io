@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">避风港</title>
     <subtitle type="html"></subtitle>
-    <updated>2024-02-05T09:07:09&#43;00:00</updated>
+    <updated>2024-02-05T12:52:16&#43;00:00</updated>
     <id>https://zvikingr.org/</id>
     <link rel="alternate" type="text/html" href="https://zvikingr.org/" />
     <link rel="self" type="application/atom&#43;xml" href="https://zvikingr.org/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">IMS 语音通话过程</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/ims-with-5g/" />
             <id>https://zvikingr.org/posts/ims-with-5g/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-02-05T13:24:45&#43;08:00</published>
             <author>
                     <name>zvikingr</name>
@@ -47,7 +47,6 @@ IMS 不需要手机安装额外客户端，运营商做了很多绑定，比如�
 &lt;p&gt;宏观图，有个印象，不要细节&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-12-gNighV.png&#34; alt=&#34;2024-02-05-14-12-gNighV&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;ims-架构&#34;&gt;IMS 架构&lt;/h3&gt;
 &lt;p&gt;什么是 IMS，IP Multimedia Subsystem（IP 多媒体子系统）。&lt;/p&gt;
 &lt;p&gt;整个 IMS 系统分成拜访网络 (Visited Network) 和归属网络 (Home Network) 两部分。&lt;/p&gt;
 &lt;p&gt;下图是一个运营商级别的复杂的架构图，存在漫游的情况，方便理解为什么需要三个 CSCF 以及实际用途。
@@ -128,7 +127,7 @@ IMS 不需要手机安装额外客户端，运营商做了很多绑定，比如�
 &lt;p&gt;第一次认证时终端和 IMS 服务端还没商量好使用哪种认证算法。&lt;/p&gt;
 &lt;p&gt;防止重放攻击，第二次认证的时候，终端会使用 IMS 服务端返回的 WWW-Authenticate 里面的认证参数来进行认证，特别是其中的 nonce 值，这个值只能使用一次，每次认证都不一样。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;发起通话&#34;&gt;发起通话&lt;/h2&gt;
+&lt;h3 id=&#34;发起通话&#34;&gt;发起通话&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个 PDU 会话里面包含多条 QoS 规则，每个规则认为是一个承载。&lt;/p&gt;
 &lt;p&gt;一个 PDU 会话会有一个默认承载，像音视频场景，会有针对语音和视频的专有承载。&lt;/p&gt;
@@ -176,7 +175,7 @@ wireshark&lt;/p&gt;
 &lt;p&gt;注册成功后，S-CSCF 会定期向 UE 发送心跳消息（Keep Alive 或 Expires Timer 刷新），以维持注册状态。同时，当 UE 的网络位置发生变化时，会重新触发 REGISTER 消息的发送，更新其在网络中的位置信息。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/etc/kamailio_scscf/kamailio_scscf.conf&lt;/code&gt;
 &lt;img src=&#34;https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-VMgQBc.png&#34; alt=&#34;2024-02-05-14-23-VMgQBc&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;上线失败-401&#34;&gt;上线失败 401&lt;/h2&gt;
+&lt;h3 id=&#34;上线失败-401&#34;&gt;上线失败 401&lt;/h3&gt;
 &lt;p&gt;核心网和 ims 中的 sqn 序列号不同步，导致 IMS 无法上线，一直触发 401 状态码，需要从核心网数据库中把对应终端的序列号写到 HSS。&lt;/p&gt;
 &lt;p&gt;参考： &lt;a href=&#34;https://blog.csdn.net/liujianfeng1984/article/details/35247623&#34;&gt;https://blog.csdn.net/liujianfeng1984/article/details/35247623&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -191,7 +190,7 @@ wireshark&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://zvikingr.org/categories/ims/" term="ims" label="ims" />
+                                <category scheme="https://zvikingr.org/categories/voip/" term="voip" label="voip" />
                             
                         
                     
@@ -231,7 +230,7 @@ wireshark&lt;/p&gt;
             <title type="text">解决 vscode 终端乱码</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/vscode-terminal-settings/" />
             <id>https://zvikingr.org/posts/vscode-terminal-settings/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-26T09:53:02&#43;08:00</published>
             <author>
                     <name>zvikingr</name>
@@ -286,7 +285,7 @@ wireshark&lt;/p&gt;
             <title type="text">Python 语法糖</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/python-tips/" />
             <id>https://zvikingr.org/posts/python-tips/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-21T22:46:01&#43;08:00</published>
             <author>
                     <name>zvikingr</name>
@@ -566,7 +565,7 @@ wireshark&lt;/p&gt;
             <title type="text">Mac 下使用 iterm2 配置 ssh</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mac-iterm2-ssh/" />
             <id>https://zvikingr.org/posts/mac-iterm2-ssh/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-21T22:24:12&#43;08:00</published>
             <author>
                     <name>zvikingr</name>
@@ -684,7 +683,7 @@ wireshark&lt;/p&gt;
             <title type="text">使用 hugo&#43;github 部署静态博客</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/hugo-github-pages/" />
             <id>https://zvikingr.org/posts/hugo-github-pages/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-21T00:23:12&#43;08:00</published>
             <author>
                     <name>zvikingr</name>
@@ -901,7 +900,7 @@ wireshark&lt;/p&gt;
             <title type="text">serverless 基础</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/serverless%E5%9F%BA%E7%A1%80/" />
             <id>https://zvikingr.org/posts/serverless%E5%9F%BA%E7%A1%80/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-15T20:20:42&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -950,7 +949,7 @@ wireshark&lt;/p&gt;
             <title type="text">reset-ssh-key</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/reset-ssh-key/" />
             <id>https://zvikingr.org/posts/reset-ssh-key/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-14T20:20:24&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1026,7 +1025,7 @@ wireshark&lt;/p&gt;
             <title type="text">软著注意事项</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
             <id>https://zvikingr.org/posts/%E8%BD%AF%E8%91%97%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-12T15:33:23&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1096,7 +1095,7 @@ wireshark&lt;/p&gt;
             <title type="text">vim 中数字增加或减少</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/" />
             <id>https://zvikingr.org/posts/vim%E4%B8%AD%E6%95%B0%E5%AD%97%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-09T16:55:39&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1179,7 +1178,7 @@ wireshark&lt;/p&gt;
             <title type="text">将 helm chart 推送到 harbor</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/" />
             <id>https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2024-01-05T15:02:35&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1249,7 +1248,7 @@ wireshark&lt;/p&gt;
             <title type="text">离线部署 k3s 集群</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/" />
             <id>https://zvikingr.org/posts/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2k3s%E9%9B%86%E7%BE%A4/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-29T14:22:11&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1745,7 +1744,7 @@ wireshark&lt;/p&gt;
             <title type="text">专利注意事项</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
             <id>https://zvikingr.org/posts/%E4%B8%93%E5%88%A9%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-22T16:21:12&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1830,7 +1829,7 @@ wireshark&lt;/p&gt;
             <title type="text">awk</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/awk/" />
             <id>https://zvikingr.org/posts/awk/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-22T16:17:59&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1891,7 +1890,7 @@ wireshark&lt;/p&gt;
             <title type="text">xargs</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/xargs/" />
             <id>https://zvikingr.org/posts/xargs/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-22T16:03:59&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -1950,7 +1949,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">iptables</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/iptables/" />
             <id>https://zvikingr.org/posts/iptables/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-15T11:03:42&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2002,7 +2001,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">查找虚拟设备对对端位置</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/" />
             <id>https://zvikingr.org/posts/%E6%9F%A5%E6%89%BE%E8%99%9A%E6%8B%9F%E8%AE%BE%E5%A4%87%E5%AF%B9%E5%AF%B9%E7%AB%AF%E4%BD%8D%E7%BD%AE/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-14T10:33:04&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2077,7 +2076,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">grep</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/grep/" />
             <id>https://zvikingr.org/posts/grep/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-13T16:04:04&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2134,7 +2133,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">find</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/find/" />
             <id>https://zvikingr.org/posts/find/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-12T20:04:05&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2196,7 +2195,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">文件权限</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" />
             <id>https://zvikingr.org/posts/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-12T16:03:29&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2255,7 +2254,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">docker compose</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/docker-compose/" />
             <id>https://zvikingr.org/posts/docker-compose/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-11T14:45:57&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2325,7 +2324,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">查看机器上的网卡</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/" />
             <id>https://zvikingr.org/posts/%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%B8%8A%E7%9A%84%E7%BD%91%E5%8D%A1/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-11T13:59:45&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2386,7 +2385,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">释放 docker 占用空间</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/" />
             <id>https://zvikingr.org/posts/%E9%87%8A%E6%94%BEdocker%E5%8D%A0%E7%94%A8%E7%A9%BA%E9%97%B4/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-09T22:43:23&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2519,7 +2518,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">docker 使用</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/docker%E4%BD%BF%E7%94%A8/" />
             <id>https://zvikingr.org/posts/docker%E4%BD%BF%E7%94%A8/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-08T10:00:39&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2652,7 +2651,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
             <title type="text">dockerfile 使用</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/dockerfile%E4%BD%BF%E7%94%A8/" />
             <id>https://zvikingr.org/posts/dockerfile%E4%BD%BF%E7%94%A8/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-07T22:59:49&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2889,7 +2888,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
             <title type="text">docker 安装</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/docker%E5%AE%89%E8%A3%85/" />
             <id>https://zvikingr.org/posts/docker%E5%AE%89%E8%A3%85/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-07T16:04:42&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -2961,7 +2960,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
             <title type="text">Linux 修改磁盘大小</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/" />
             <id>https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-07T15:03:34&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3026,7 +3025,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
             <title type="text">Oracle 服务器使用 netboot 重装系统</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/oracle%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8netboot%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" />
             <id>https://zvikingr.org/posts/oracle%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8netboot%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-07T13:30:25&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3113,7 +3112,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
             <title type="text">tcp 保活</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/tcp%E4%BF%9D%E6%B4%BB/" />
             <id>https://zvikingr.org/posts/tcp%E4%BF%9D%E6%B4%BB/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-04T20:11:39&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3185,7 +3184,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
             <title type="text">用户和用户组</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/" />
             <id>https://zvikingr.org/posts/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-12-01T23:03:26&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3307,7 +3306,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">rsync 文件同步</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/" />
             <id>https://zvikingr.org/posts/rsync%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-11-19T11:33:08&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3425,7 +3424,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">命令行内容输出到剪贴板</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/" />
             <id>https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-11-09T21:26:54&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3502,7 +3501,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">hping3 使用</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/hping3%E4%BD%BF%E7%94%A8/" />
             <id>https://zvikingr.org/posts/hping3%E4%BD%BF%E7%94%A8/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-11-04T11:39:44&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3567,7 +3566,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">临时修改网卡地址</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/" />
             <id>https://zvikingr.org/posts/%E4%B8%B4%E6%97%B6%E4%BF%AE%E6%94%B9%E7%BD%91%E5%8D%A1%E5%9C%B0%E5%9D%80/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-11-01T13:03:49&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3636,7 +3635,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 依赖注入</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/" />
             <id>https://zvikingr.org/posts/go%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-09-23T11:20:06&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3684,7 +3683,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 时区问题</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/" />
             <id>https://zvikingr.org/posts/go%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-09-17T13:44:09&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3851,7 +3850,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">命令行启动 wireshark 抓包</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/" />
             <id>https://zvikingr.org/posts/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8wireshark%E6%8A%93%E5%8C%85/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-09-06T12:15:41&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -3926,7 +3925,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Golang 的 generate stringer</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/" />
             <id>https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-09-03T17:07:06&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4319,7 +4318,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">docker 仓库</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/docker%E4%BB%93%E5%BA%93/" />
             <id>https://zvikingr.org/posts/docker%E4%BB%93%E5%BA%93/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-07-29T22:01:35&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4386,7 +4385,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 竞态检测</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/" />
             <id>https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-07-27T19:04:14&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4457,7 +4456,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 编译 tips</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/" />
             <id>https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-07-27T09:00:19&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4644,7 +4643,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">开源协议区别</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/" />
             <id>https://zvikingr.org/posts/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%E5%8C%BA%E5%88%AB/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-07-04T09:55:25&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4688,7 +4687,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 的 gc</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E7%9A%84gc/" />
             <id>https://zvikingr.org/posts/go%E7%9A%84gc/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-06-19T23:04:12&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4733,7 +4732,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">分布式锁提前过期</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/" />
             <id>https://zvikingr.org/posts/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E6%8F%90%E5%89%8D%E8%BF%87%E6%9C%9F/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-06-13T17:01:37&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4779,7 +4778,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">LRU</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/lru/" />
             <id>https://zvikingr.org/posts/lru/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-05-17T21:35:01&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4830,7 +4829,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
             <title type="text">Go 的 GPM 模型</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/" />
             <id>https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-05-17T21:30:24&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4880,7 +4879,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">Go 内存逃逸</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/" />
             <id>https://zvikingr.org/posts/go%E5%86%85%E5%AD%98%E9%80%83%E9%80%B8/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-05-15T11:33:20&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -4991,7 +4990,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">rocketmq 事务消息</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/" />
             <id>https://zvikingr.org/posts/rocketmq%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-05-14T12:30:46&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5045,7 +5044,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">本地消息表</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/" />
             <id>https://zvikingr.org/posts/%E6%9C%AC%E5%9C%B0%E6%B6%88%E6%81%AF%E8%A1%A8/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-05-14T09:02:01&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5096,7 +5095,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">map-reduce</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/map-reduce/" />
             <id>https://zvikingr.org/posts/map-reduce/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-04-27T17:01:23&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5140,7 +5139,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">lsof</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/lsof/" />
             <id>https://zvikingr.org/posts/lsof/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-04-18T17:54:01&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5214,7 +5213,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">systemctl</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/systemctl/" />
             <id>https://zvikingr.org/posts/systemctl/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-04-18T16:12:56&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5273,7 +5272,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">间隙锁和死锁</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/" />
             <id>https://zvikingr.org/posts/%E9%97%B4%E9%9A%99%E9%94%81%E5%92%8C%E6%AD%BB%E9%94%81/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-04-01T15:03:02&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5320,7 +5319,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">MySQL count(*)、count(1)、count(列) 的区别</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/" />
             <id>https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-25T10:29:26&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5389,7 +5388,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">MySQL8 创建用户和授权</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/" />
             <id>https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-22T17:30:59&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5489,7 +5488,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">MySQL 允许 root 远程访问</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/" />
             <id>https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-22T16:09:45&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5552,7 +5551,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">MySQL 事务</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/" />
             <id>https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-19T21:15:03&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5629,7 +5628,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">MySQL 常识</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/" />
             <id>https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-18T11:24:45&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5748,7 +5747,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">Go sync map 实现</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/" />
             <id>https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-16T21:20:16&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5792,7 +5791,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">redis 状态查看</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/" />
             <id>https://zvikingr.org/posts/redis%E7%8A%B6%E6%80%81%E6%9F%A5%E7%9C%8B/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-10T21:11:22&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5847,7 +5846,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">redis re-hash 过程</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/" />
             <id>https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-10T20:11:06&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5892,7 +5891,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">redis 热点 key</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/redis%E7%83%AD%E7%82%B9key/" />
             <id>https://zvikingr.org/posts/redis%E7%83%AD%E7%82%B9key/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-10T20:01:32&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5938,7 +5937,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">redis 集群</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/redis%E9%9B%86%E7%BE%A4/" />
             <id>https://zvikingr.org/posts/redis%E9%9B%86%E7%BE%A4/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-10T09:55:54&#43;00:00</published>
             <author>
                     <name>zvikingr</name>
@@ -5998,7 +5997,7 @@ M：操作系统线程&lt;/p&gt;
             <title type="text">curl</title>
             <link rel="alternate" type="text/html" href="https://zvikingr.org/posts/curl/" />
             <id>https://zvikingr.org/posts/curl/</id>
-            <updated>2024-02-05T09:07:06&#43;00:00</updated>
+            <updated>2024-02-05T12:52:12&#43;00:00</updated>
             <published>2023-03-02T11:25:27&#43;00:00</published>
             <author>
                     <name>zvikingr</name>

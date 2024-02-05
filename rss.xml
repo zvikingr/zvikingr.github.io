@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 05 Feb 2024 09:07:09 &#43;0000</lastBuildDate>
+        <lastBuildDate>Mon, 05 Feb 2024 12:52:17 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://zvikingr.org/rss.xml" />
         
@@ -56,7 +56,6 @@ IMS 不需要手机安装额外客户端，运营商做了很多绑定，比如�
 &lt;p&gt;宏观图，有个印象，不要细节&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-12-gNighV.png&#34; alt=&#34;2024-02-05-14-12-gNighV&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;ims-架构&#34;&gt;IMS 架构&lt;/h3&gt;
 &lt;p&gt;什么是 IMS，IP Multimedia Subsystem（IP 多媒体子系统）。&lt;/p&gt;
 &lt;p&gt;整个 IMS 系统分成拜访网络 (Visited Network) 和归属网络 (Home Network) 两部分。&lt;/p&gt;
 &lt;p&gt;下图是一个运营商级别的复杂的架构图，存在漫游的情况，方便理解为什么需要三个 CSCF 以及实际用途。
@@ -137,7 +136,7 @@ IMS 不需要手机安装额外客户端，运营商做了很多绑定，比如�
 &lt;p&gt;第一次认证时终端和 IMS 服务端还没商量好使用哪种认证算法。&lt;/p&gt;
 &lt;p&gt;防止重放攻击，第二次认证的时候，终端会使用 IMS 服务端返回的 WWW-Authenticate 里面的认证参数来进行认证，特别是其中的 nonce 值，这个值只能使用一次，每次认证都不一样。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;发起通话&#34;&gt;发起通话&lt;/h2&gt;
+&lt;h3 id=&#34;发起通话&#34;&gt;发起通话&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个 PDU 会话里面包含多条 QoS 规则，每个规则认为是一个承载。&lt;/p&gt;
 &lt;p&gt;一个 PDU 会话会有一个默认承载，像音视频场景，会有针对语音和视频的专有承载。&lt;/p&gt;
@@ -185,7 +184,7 @@ wireshark&lt;/p&gt;
 &lt;p&gt;注册成功后，S-CSCF 会定期向 UE 发送心跳消息（Keep Alive 或 Expires Timer 刷新），以维持注册状态。同时，当 UE 的网络位置发生变化时，会重新触发 REGISTER 消息的发送，更新其在网络中的位置信息。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/etc/kamailio_scscf/kamailio_scscf.conf&lt;/code&gt;
 &lt;img src=&#34;https://cdn.jsdelivr.net/gh/zvikingr/images@main/assets/2024-02-05-14-23-VMgQBc.png&#34; alt=&#34;2024-02-05-14-23-VMgQBc&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;上线失败-401&#34;&gt;上线失败 401&lt;/h2&gt;
+&lt;h3 id=&#34;上线失败-401&#34;&gt;上线失败 401&lt;/h3&gt;
 &lt;p&gt;核心网和 ims 中的 sqn 序列号不同步，导致 IMS 无法上线，一直触发 401 状态码，需要从核心网数据库中把对应终端的序列号写到 HSS。&lt;/p&gt;
 &lt;p&gt;参考： &lt;a href=&#34;https://blog.csdn.net/liujianfeng1984/article/details/35247623&#34;&gt;https://blog.csdn.net/liujianfeng1984/article/details/35247623&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -200,7 +199,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/ims/">ims</category>
+                                    <category domain="https://zvikingr.org/categories/voip/">voip</category>
                                 
                             
                         
