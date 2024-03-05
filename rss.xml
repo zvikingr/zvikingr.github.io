@@ -10,7 +10,7 @@
         <title>避风港</title>
         <link>https://zvikingr.org/</link>
         <description></description>
-        <generator>Hugo 0.122.0 https://gohugo.io/</generator>
+        <generator>Hugo 0.123.7 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 19 Feb 2024 03:15:50 &#43;0000</lastBuildDate>
+        <lastBuildDate>Tue, 05 Mar 2024 02:15:37 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://zvikingr.org/rss.xml" />
         
@@ -199,7 +199,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/voip/">voip</category>
+                                    <category domain="https://zvikingr.org/categories/voip/">Voip</category>
                                 
                             
                         
@@ -209,13 +209,13 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/ims/">ims</category>
+                                    <category domain="https://zvikingr.org/tags/ims/">Ims</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/voip/">voip</category>
+                                    <category domain="https://zvikingr.org/tags/voip/">Voip</category>
                                 
                             
                                 
@@ -227,7 +227,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/sip/">sip</category>
+                                    <category domain="https://zvikingr.org/tags/sip/">Sip</category>
                                 
                             
                         
@@ -269,7 +269,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/vscode/">vscode</category>
+                                    <category domain="https://zvikingr.org/categories/vscode/">Vscode</category>
                                 
                             
                         
@@ -279,7 +279,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/vscode/">vscode</category>
+                                    <category domain="https://zvikingr.org/tags/vscode/">Vscode</category>
                                 
                             
                         
@@ -546,7 +546,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/python/">python</category>
+                                    <category domain="https://zvikingr.org/categories/python/">Python</category>
                                 
                             
                         
@@ -556,7 +556,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/python/">python</category>
+                                    <category domain="https://zvikingr.org/tags/python/">Python</category>
                                 
                             
                         
@@ -649,7 +649,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mac/">mac</category>
+                                    <category domain="https://zvikingr.org/categories/mac/">Mac</category>
                                 
                             
                         
@@ -659,19 +659,19 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/iterm2/">iterm2</category>
+                                    <category domain="https://zvikingr.org/tags/iterm2/">Iterm2</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mac/">mac</category>
+                                    <category domain="https://zvikingr.org/tags/mac/">Mac</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/ssh/">ssh</category>
+                                    <category domain="https://zvikingr.org/tags/ssh/">Ssh</category>
                                 
                             
                         
@@ -863,7 +863,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/blog/">blog</category>
+                                    <category domain="https://zvikingr.org/categories/blog/">Blog</category>
                                 
                             
                         
@@ -873,19 +873,19 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/blog/">blog</category>
+                                    <category domain="https://zvikingr.org/tags/blog/">Blog</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/github/">github</category>
+                                    <category domain="https://zvikingr.org/tags/github/">Github</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/hugo/">hugo</category>
+                                    <category domain="https://zvikingr.org/tags/hugo/">Hugo</category>
                                 
                             
                         
@@ -921,7 +921,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/severless/">severless</category>
+                                    <category domain="https://zvikingr.org/categories/severless/">Severless</category>
                                 
                             
                         
@@ -931,7 +931,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/severless/">severless</category>
+                                    <category domain="https://zvikingr.org/tags/severless/">Severless</category>
                                 
                             
                         
@@ -994,7 +994,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -1004,7 +1004,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -1141,7 +1141,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/vim/">vim</category>
+                                    <category domain="https://zvikingr.org/categories/vim/">Vim</category>
                                 
                             
                         
@@ -1151,7 +1151,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/vim/">vim</category>
+                                    <category domain="https://zvikingr.org/tags/vim/">Vim</category>
                                 
                             
                         
@@ -1161,8 +1161,8 @@ wireshark&lt;/p&gt;
         
             <item>
                 <title>将 helm chart 推送到 harbor</title>
-                <link>https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/%E5%B0%86helm-chart%E6%8E%A8%E9%80%81%E5%88%B0harbor/</guid>
+                <link>https://zvikingr.org/posts/helm-chart-to-harbor/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/helm-chart-to-harbor/</guid>
                 <pubDate>Fri, 05 Jan 2024 15:02:35 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -1208,7 +1208,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/k8s/">k8s</category>
+                                    <category domain="https://zvikingr.org/categories/k8s/">K8s</category>
                                 
                             
                         
@@ -1218,7 +1218,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/k8s/">k8s</category>
+                                    <category domain="https://zvikingr.org/tags/k8s/">K8s</category>
                                 
                             
                         
@@ -1689,7 +1689,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/k8s/">k8s</category>
+                                    <category domain="https://zvikingr.org/categories/k8s/">K8s</category>
                                 
                             
                         
@@ -1699,19 +1699,19 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/k8s/">k8s</category>
+                                    <category domain="https://zvikingr.org/tags/k8s/">K8s</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/k3s/">k3s</category>
+                                    <category domain="https://zvikingr.org/tags/k3s/">K3s</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/kube-vip/">kube-vip</category>
+                                    <category domain="https://zvikingr.org/tags/kube-vip/">Kube-Vip</category>
                                 
                             
                         
@@ -1835,7 +1835,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -1845,7 +1845,7 @@ wireshark&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -1891,7 +1891,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -1901,7 +1901,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -1940,7 +1940,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -1950,7 +1950,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -2012,7 +2012,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2022,7 +2022,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -2066,7 +2066,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2076,7 +2076,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -2125,7 +2125,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2135,7 +2135,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -2187,7 +2187,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2197,7 +2197,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -2254,7 +2254,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -2264,7 +2264,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -2306,7 +2306,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2316,7 +2316,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -2442,7 +2442,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -2452,7 +2452,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -2572,7 +2572,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -2582,7 +2582,7 @@ docker ps -q | xargs -t -I {} docker exec {} sh -c &amp;#34;find /sys -name ifli
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -2806,7 +2806,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -2816,7 +2816,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -2875,7 +2875,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -2885,7 +2885,7 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -2895,8 +2895,8 @@ ADD ubuntu-xenial-core-cloudimg-amd64-root.tar.gz /
         
             <item>
                 <title>Linux 修改磁盘大小</title>
-                <link>https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/linux%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E5%A4%A7%E5%B0%8F/</guid>
+                <link>https://zvikingr.org/posts/linux-disk-change/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/linux-disk-change/</guid>
                 <pubDate>Thu, 07 Dec 2023 15:03:34 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -2937,7 +2937,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -2947,7 +2947,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -2957,8 +2957,8 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
         
             <item>
                 <title>Oracle 服务器使用 netboot 重装系统</title>
-                <link>https://zvikingr.org/posts/oracle%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8netboot%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/oracle%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8netboot%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+                <link>https://zvikingr.org/posts/oracle-server-netboot/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/oracle-server-netboot/</guid>
                 <pubDate>Thu, 07 Dec 2023 13:30:25 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3084,7 +3084,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -3094,7 +3094,7 @@ xfs 文件系统使用 &lt;code&gt;xfs_growfs&lt;/code&gt;&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -3209,7 +3209,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -3219,7 +3219,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -3324,7 +3324,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -3334,7 +3334,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -3520,7 +3520,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -3530,7 +3530,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -3571,7 +3571,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -3581,7 +3581,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -3591,8 +3591,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 时区问题</title>
-                <link>https://zvikingr.org/posts/go%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/</guid>
+                <link>https://zvikingr.org/posts/go-timezone/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-timezone/</guid>
                 <pubDate>Sun, 17 Sep 2023 13:44:09 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -3735,7 +3735,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -3745,7 +3745,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -3827,8 +3827,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Golang 的 generate stringer</title>
-                <link>https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/golang%E7%9A%84generate-stringer/</guid>
+                <link>https://zvikingr.org/posts/go-generate-stringr/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-generate-stringr/</guid>
                 <pubDate>Sun, 03 Sep 2023 17:07:06 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4191,7 +4191,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4201,7 +4201,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                                 
@@ -4261,7 +4261,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/categories/docker/">Docker</category>
                                 
                             
                         
@@ -4271,7 +4271,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/docker/">docker</category>
+                                    <category domain="https://zvikingr.org/tags/docker/">Docker</category>
                                 
                             
                         
@@ -4281,8 +4281,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 竞态检测</title>
-                <link>https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%AB%9E%E6%80%81%E6%A3%80%E6%B5%8B/</guid>
+                <link>https://zvikingr.org/posts/go-race/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-race/</guid>
                 <pubDate>Thu, 27 Jul 2023 19:04:14 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4329,7 +4329,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4339,7 +4339,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -4349,8 +4349,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 编译 tips</title>
-                <link>https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%BC%96%E8%AF%91tips/</guid>
+                <link>https://zvikingr.org/posts/go-cc-tips/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-cc-tips/</guid>
                 <pubDate>Thu, 27 Jul 2023 09:00:19 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4513,7 +4513,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4523,7 +4523,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -4574,8 +4574,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 的 gc</title>
-                <link>https://zvikingr.org/posts/go%E7%9A%84gc/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%9A%84gc/</guid>
+                <link>https://zvikingr.org/posts/go-gc/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-gc/</guid>
                 <pubDate>Mon, 19 Jun 2023 23:04:12 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4596,7 +4596,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4606,7 +4606,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -4639,7 +4639,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/categories/redis/">Redis</category>
                                 
                             
                         
@@ -4649,7 +4649,7 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/tags/redis/">Redis</category>
                                 
                             
                         
@@ -4707,8 +4707,8 @@ adduser 是一个 perl 脚本，在使用的时候会出现类似人机交互的
         
             <item>
                 <title>Go 的 GPM 模型</title>
-                <link>https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go%E7%9A%84gpm%E6%A8%A1%E5%9E%8B/</guid>
+                <link>https://zvikingr.org/posts/go-gpm/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-gpm/</guid>
                 <pubDate>Wed, 17 May 2023 21:30:24 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -4734,7 +4734,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4744,7 +4744,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -4842,7 +4842,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -4852,7 +4852,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -5047,7 +5047,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -5057,7 +5057,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
@@ -5109,7 +5109,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -5119,7 +5119,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                         
@@ -5153,7 +5153,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5163,7 +5163,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5173,8 +5173,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL count(*)、count(1)、count(列) 的区别</title>
-                <link>https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-countcount1count%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+                <link>https://zvikingr.org/posts/mysql-count/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-count/</guid>
                 <pubDate>Sat, 25 Mar 2023 10:29:26 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5219,7 +5219,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5229,7 +5229,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5239,8 +5239,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL8 创建用户和授权</title>
-                <link>https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/mysql8%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E6%8E%88%E6%9D%83/</guid>
+                <link>https://zvikingr.org/posts/mysql-create-user-auth/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-create-user-auth/</guid>
                 <pubDate>Wed, 22 Mar 2023 17:30:59 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5316,7 +5316,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5326,7 +5326,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5336,8 +5336,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 允许 root 远程访问</title>
-                <link>https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E5%85%81%E8%AE%B8root%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/</guid>
+                <link>https://zvikingr.org/posts/mysql-remote-root/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-remote-root/</guid>
                 <pubDate>Wed, 22 Mar 2023 16:09:45 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5376,7 +5376,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5386,7 +5386,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5396,8 +5396,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 事务</title>
-                <link>https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E4%BA%8B%E5%8A%A1/</guid>
+                <link>https://zvikingr.org/posts/mysql-transaction/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-transaction/</guid>
                 <pubDate>Sun, 19 Mar 2023 21:15:03 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5450,7 +5450,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5460,7 +5460,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5470,8 +5470,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>MySQL 常识</title>
-                <link>https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/mysql%E5%B8%B8%E8%AF%86/</guid>
+                <link>https://zvikingr.org/posts/mysql-common/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/mysql-common/</guid>
                 <pubDate>Sat, 18 Mar 2023 11:24:45 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5566,7 +5566,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/categories/mysql/">Mysql</category>
                                 
                             
                         
@@ -5576,7 +5576,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/mysql/">mysql</category>
+                                    <category domain="https://zvikingr.org/tags/mysql/">Mysql</category>
                                 
                             
                         
@@ -5586,8 +5586,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>Go sync map 实现</title>
-                <link>https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/go-sync-map%E5%AE%9E%E7%8E%B0/</guid>
+                <link>https://zvikingr.org/posts/go-sync-map/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/go-sync-map/</guid>
                 <pubDate>Thu, 16 Mar 2023 21:20:16 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5607,7 +5607,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/categories/golang/">Golang</category>
                                 
                             
                         
@@ -5617,7 +5617,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/golang/">golang</category>
+                                    <category domain="https://zvikingr.org/tags/golang/">Golang</category>
                                 
                             
                         
@@ -5659,7 +5659,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/categories/redis/">Redis</category>
                                 
                             
                         
@@ -5669,7 +5669,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/tags/redis/">Redis</category>
                                 
                             
                         
@@ -5679,8 +5679,8 @@ M：操作系统线程&lt;/p&gt;
         
             <item>
                 <title>redis re-hash 过程</title>
-                <link>https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/</link>
-                <guid isPermaLink="true">https://zvikingr.org/posts/redis-re-hash%E8%BF%87%E7%A8%8B/</guid>
+                <link>https://zvikingr.org/posts/redis-rehash/</link>
+                <guid isPermaLink="true">https://zvikingr.org/posts/redis-rehash/</guid>
                 <pubDate>Fri, 10 Mar 2023 20:11:06 &#43;0000</pubDate>
                 
                     <author>zvikingr@outlook.com (zvikingr)</author>
@@ -5701,7 +5701,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/categories/redis/">Redis</category>
                                 
                             
                         
@@ -5711,7 +5711,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/tags/redis/">Redis</category>
                                 
                             
                         
@@ -5744,7 +5744,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/categories/redis/">Redis</category>
                                 
                             
                         
@@ -5754,7 +5754,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/tags/redis/">Redis</category>
                                 
                             
                         
@@ -5801,7 +5801,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/categories/redis/">Redis</category>
                                 
                             
                         
@@ -5811,7 +5811,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/redis/">redis</category>
+                                    <category domain="https://zvikingr.org/tags/redis/">Redis</category>
                                 
                             
                         
@@ -5838,7 +5838,7 @@ M：操作系统线程&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl qq.com -L 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;只显示-ip-头&#34;&gt;只显示 IP 头&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;只显示请求头&#34;&gt;只显示请求头&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5870,7 +5870,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/categories/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/categories/linux/">Linux</category>
                                 
                             
                         
@@ -5880,7 +5880,7 @@ M：操作系统线程&lt;/p&gt;
                                 
                                 
                                 
-                                    <category domain="https://zvikingr.org/tags/linux/">linux</category>
+                                    <category domain="https://zvikingr.org/tags/linux/">Linux</category>
                                 
                             
                                 
